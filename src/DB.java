@@ -6,17 +6,17 @@ class DataBaseJ
 {
 
 	static
-	{
-	    try
-	    {
-	        // loads com.mysql.jdbc.Driver into memory
-	    	Class.forName("com.mysql.jdbc.Driver");
-	    } 
-		catch (ClassNotFoundException cnf) 
-		{
-		  System.out.println("Driver could not be loaded: " + cnf);
-	    }
-    }
+			  {
+			    try
+			    {
+			      // loads com.mysql.jdbc.Driver into memory
+			      Class.forName("com.mysql.jdbc.Driver");
+			    } 
+			    catch (ClassNotFoundException cnf) 
+			    {
+			      System.out.println("Driver could not be loaded: " + cnf);
+			    }
+			  }
 	
 	public static void db()
 	{
